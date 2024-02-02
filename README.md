@@ -3,7 +3,7 @@
 
 
 ## dataset exploration
-Data is downloaded using duckduckGO api
+Data is downloaded using duckduckGO API
 
 Data exploration can be found inside [`meme2_analysis.ipynb`](./meme2_analysis.ipynb)
 
@@ -37,7 +37,7 @@ streamlit run streamlit.py
 
 ### good query examples
 
-### query: dog meems
+### query: dog memes
 ![dog memes](./screenshots/good_dog.png)
 
 ### query: cat with the food
@@ -51,18 +51,18 @@ streamlit run streamlit.py
 
 ### bad query examples
 
-Bad search examples usually envolves searching memes by text on the image
+Bad search examples usually involves searching memes by text on the image
 
-This can be solved by using OCR, and searching in both spaces(image and text)
+This can be solved by using OCR and searching in both spaces(image and text)
 
 ### query: it's been a ruff day
 ![kj](./screenshots/bad_day.png)
 
-### image from dataset we wanted to retrieve
+### image from the dataset we wanted to retrieve
 ![kj](./screenshots/ruff%20day.png)
 
 ## system evaluation
 
-One of ways to evaluate this system would be to create dataset with pairs (query, image). Query should be tailored specifically for the image. We expect that pair to have the best similarity metric, compared with the same query with other images from dataset.
+One of ways to evaluate this system would be to create dataset with pairs (query, image). The Query should be tailored specifically for the image. We expect that pair to have the best similarity metric, compared with the same query with other images from dataset.
 
-We would use `recall@1` as a evaluation metric. If there are multiple images that matches single query, we can use some of the metrics that also captures ranking of results, like `mAP@n` or `nDCG@n`.  
+We would use `recall@1` as an evaluation metric. If multiple images matches single query, we can use some of the metrics that also capture the ranking of results, like `mAP@n` or `nDCG@n`.
