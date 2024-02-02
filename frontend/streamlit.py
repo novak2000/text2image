@@ -39,14 +39,14 @@ st.text_input('image search', key="query")
 
 results = search(st.session_state.query)
 
-column_cnt = 1
+column_cnt = 4
 cols = cycle(st.columns(column_cnt))
 for idx, filteredImage in enumerate(results):
     if idx%column_cnt==0:
         st.markdown("""---""")
         cols = cycle(st.columns(column_cnt))
         
-    next(cols).image('.'+filteredImage, width = 300, caption=f'{idx+1}')
+    next(cols).image('.'+filteredImage, width = 250, caption=f'{idx+1}')
 
 
 
