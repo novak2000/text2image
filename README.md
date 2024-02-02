@@ -2,13 +2,11 @@
 # pets meme search
 
 
+
 ## dataset exploration
 Data is downloaded using duckduckGO API
 
 Data exploration can be found inside [`meme2_analysis.ipynb`](./meme2_analysis.ipynb)
-
-TODO
-- [ ] remove duplicate images
 
 ## How to run app:
 
@@ -66,3 +64,8 @@ This can be solved by using OCR and searching in both spaces(image and text)
 One of ways to evaluate this system would be to create dataset with pairs (query, image). The Query should be tailored specifically for the image. We expect that pair to have the best similarity metric, compared with the same query with other images from dataset.
 
 We would use `recall@1` as an evaluation metric. If multiple images matches single query, we can use some of the metrics that also capture the ranking of results, like `mAP@n` or `nDCG@n`.
+
+
+## TODO
+- [ ] remove duplicate images
+- [ ] run streamlit and preprocessing in container
