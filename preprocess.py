@@ -84,11 +84,11 @@ if __name__ == '__main__':
     search_queries = [
         'dog memes',
         'animal memes',
-        # 'cat memes',
+        'cat memes',
         # 'funny animal memes',
         # 'Cute animal memes',
         # 'Classic animal memes',
-        # 'Pet fail memes'
+        'Pet fail memes'
     ]
     
     logging.info('loading model...')

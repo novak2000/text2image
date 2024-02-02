@@ -3,7 +3,7 @@
 
 
 ## dataset exploration
-Data is downloaded using duckduckGO api for image search.
+Data is downloaded using duckduckGO api
 
 Data exploration can be found inside [`meme2_analysis.ipynb`](./meme2_analysis.ipynb)
 
@@ -35,12 +35,32 @@ streamlit run streamlit.py
 
 ### good query examples
 
-TODO
+### query: dog meems
+![dog memes](./screenshots/good_dog.png)
+
+### query: cat with the food
+![kj](./screenshots/cat_with_food.png)
+
+### query: pixar
+![kj](./screenshots/good_pixar.png)
+
+### query: showering
+![kj](./screenshots/good_showering.png)
 
 ### bad query examples
 
-TODO
+Bad search examples usually envolves searching memes by text on the image
+
+This can be solved by using OCR, and searching in both spaces(image and text)
+
+### query: it's been a ruff day
+![kj](./screenshots/bad_day.png)
+
+### image from dataset we wanted to retrieve
+![kj](./screenshots/ruff%20day.png)
 
 ## system evaluation
 
-TODO
+One of ways to evaluate this system would be to create dataset with pairs (query, image). Query should be tailored specifically for the image. We expect that pair to have the best similarity metric, compared with the same query with other images from dataset.
+
+We would use `recall@1` as a evaluation metric. If there are multiple images that matches single query, we can use some of the metrics that also captures ranking of results, like `mAP@n` or `nDCG@n`.  
