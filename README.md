@@ -7,6 +7,8 @@ Data is downloaded using duckduckGO api
 
 Data exploration can be found inside [`meme2_analysis.ipynb`](./meme2_analysis.ipynb)
 
+TODO
+- [ ] remove duplicate images
 
 ## How to run app:
 
